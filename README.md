@@ -1,7 +1,7 @@
 # NPC Tracker
 
 Hello! The goal of this README is to inform you about my site, NPCTracker.com
-![Dungeon and Dragon ICON](images/dndbanner.png =480x250)
+![Dungeon and Dragon ICON](images/dndbanner.png)
 
 ## Goal
 
