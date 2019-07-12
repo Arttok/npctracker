@@ -13,3 +13,7 @@
     padding-left: 75px;
     padding-right: 25px;
 }
+
+.menu:hover {
+    background-color: blue;
+}
