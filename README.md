@@ -1,7 +1,7 @@
 # NPC Tracker
 
 Hello! The goal of this README is to inform you about my site, NPCTracker.com
-![](https://bit.ly/2YSvZFw =480x250)
+![Dungeon and Dragon ICON](https://bit.ly/2YSvZFw =480x250)
 
 ## Goal
 
