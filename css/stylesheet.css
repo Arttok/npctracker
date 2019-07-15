@@ -5,8 +5,8 @@
 #dndicon {
     background-repeat: no-repeat;
     background-position: center bottom;
-    height:128px;
-    width:256px;
+    height:192px;
+    width:320px;
 }
 
 #logintxt {
@@ -16,4 +16,9 @@
 
 .menu:hover {
     background-color: blue;
+}
+
+#dndlogin {
+    height:180px;
+    width:320px;
 }
