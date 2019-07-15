@@ -56,8 +56,8 @@
 
     <!-- Main content section, user login with email & password-->
     <main class="text-light">
-            <img class="mb-4" src="images/dndregister.png" alt="dndregister" id="dndregister">
-            <h1 class="h3 mb-2 font-weight-normal font-weight-bold">NPCTracker Registration</h1>
+            <img class="mb-1" src="images/dndregister.png" alt="dndregister" id="dndregister">
+            <h1 class="h3 mb-1 font-weight-normal font-weight-bold">NPCTracker Registration</h1>
             <p class="text-right col-4 offset-md-3" id="logintxt"> Where every NPC matters!</p>
         <!--Form input fields-->
         <form class ="form-signin col-4 offset-md-4 flex-column">
@@ -108,14 +108,23 @@
             </div>
 
             <!-- Remember Me / Login-->
-            <div class="checkbox mb-3">
-                <label>
-                <input type="checkbox" value="remember-me"> Remember me
+            <div class="d-inline">
+                <p>How did you hear about us?</p>
+                <label class="radio-inline" required>
+                        <input type="radio" name="optradio" checked>Internet
+                        </label>
+                        <label class="radio-inline ml-1">
+                        <input type="radio" name="optradio">Podcast
+                        </label>
+                        <label class="radio-inline ml-1">
+                        <input type="radio" name="optradio">Friend
+                        <label class="radio-inline ml-1">
+                        <input type="radio" name="optradio">Other
                 </label>
             </div>
             <div class="btn-group justify-content-center col-12">
                     <a href="#" class="btn btn-outline-primary text-light btn-lg btn-block mr-5">Login</a>
-                    <a href="#" class="btn btn-outline-primary text-light btn-lg btn-block">Clear</a>
+                    <input type="reset" class="btn btn-outline-primary text-light btn-lg btn-block" value="Reset"></input>
                   </div>
         </form>
     </main>
@@ -137,70 +146,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-        <!-- 
-
-        <form class="form-signin">
-            <!-- First row of buttons - ->
-            <div class="form-check form-check-inline">
-                <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control mr-2" placeholder="Email address" required autofocus>
-                <br>
-                <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" id="inputPassword" class="form-control mr-2" placeholder="Password" required>
-                <label for="inputPassword" class="sr-only">First Name</label>
-                <input type="password" id="inputPassword" class="form-control mr-2" placeholder="First Name" required>
-                <br>            
-            </div>
-            <br>
-            <!-- Second Row- ->
-            <div class="form-check form-check-inline mt-3">
-                    <label for="inputEmail" class="sr-only">Confirm Email</label>
-                    <input type="email" id="inputEmail" class="form-control mr-2" placeholder="Confirm Email" required autofocus>
-                    <br>
-                    <label for="inputPassword" class="sr-only">Confirm Password</label>
-                    <input type="password" id="inputPassword" class="form-control mr-2" placeholder="Confirm Password" required>
-                    <label for="inputPassword" class="sr-only">Last Name</label>
-                    <input type="password" id="inputPassword" class="form-control mr-2" placeholder="Last Password" required>
-                    <br>
-            </div>
-            <br>
-            <!--3rd row - radial- ->
-            <div class="form-check form-check-inline col-6 pt-3 pb-3">
-                <label class="form-check-label form-check-inline"> 
-                    <p class="mr-1">Gender (optional)</p> 
-                </label>
-
-                <label for="radio1" class="form-check-label form-check-inline">    
-                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
-                    <p>Male</p>
-                </label>
-
-                <label for="radio2" class="form-check-label form-check-inline">  
-                    <input type="radio" class="form-check-input ml-1" id="radio2" name="optradio" value="Felame" checked>
-                    <p>Female</p>
-                </label>
-
-            <!-- 3rd Row - Age and DnD Version- ->
-                    <label for="age" class="col-1 col-form-label">Age</label>
-                    <div class="col-2">
-                      <input class="form-control" type="number" value="" min="18" max="70" id="age">
-                    </div>
-            
-            <!--DnD Version Selector- ->
-            <label class="mr-sm-2" for="dndversion">Version</label>
-            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="dndversion">
-              <option selected>Choose...</option>
-              <option value="1">DnD 2e</option>
-              <option value="1">DnD 3e</option>
-              <option value="2">DnD 3.5</option>
-              <option value="3">DnD 4e</option>
-              <option value="3">DnD 5e</option>
-              <option value="3">Homebrew</option>              
-              <option value="3">Other</option>
-            </select>             
-            </div>
-            -->
-            
