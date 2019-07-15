@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Registration</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Own Style sheet and Media Queries-->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/media_queries.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+  </head>
+ 
+  <body class="text-center bg-secondary h-100">
+
+    <!-- Header / Navigation section-->
+    <header>
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+                <h5 class="my-0 mr-md-auto font-weight-normal"> 
+                        <a class="btn btn-outline-primary text-light" href="#">
+                            Home
+                        </a>
+                </h5> 
+                <nav class="my-2 my-md-0 mr-md-3 ">
+                        <a class="btn btn-outline-primary text-light" href="#">Login</a> 
+                    
+                    <!-- Dropdown Menu bar that list various other sections of the page-->
+                    <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                        <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item btn text-light menu mask" href="#">Home</a>
+                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Add</a>
+                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
+                            <a class="dropdown-item btn text-light menu mask" href="#">About</a>
+                            <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Main content section, user login with email & password-->
+    <main class="text-light">
+            <img class="mb-4" src="images/dndregister.png" alt="dndregister" id="dndregister">
+            <h1 class="h3 mb-2 font-weight-normal font-weight-bold">NPCTracker Registration</h1>
+            <p class="text-right col-4 offset-md-3" id="logintxt"> Where every NPC matters!</p>
+        <!--Form input fields-->
+        <form class ="form-signin col-4 offset-md-4 flex-column">
+            <div class="form-group row justify-content-center">
+                <label for="email">Email</label>
+                <div class="col-8">
+                  <input class="form-control" type="email" value="" placeholder="Your Email" id="email" required>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label for="username">Username</label>
+                <div class="col-8">
+                  <input class="form-control" type="search" value="" placeholder="Username-6-15 characters" id="username" required>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                    <label for="confirmuser">Confirm User</label>
+                    <div class="col-8">
+                      <input class="form-control" type="search" value="" placeholder="Username-6-15 characters" id="confirmuser" required>
+                    </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label for="password">Password</label>
+                <div class="col-8">
+                  <input class="form-control" type="password" value="" id="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label for="email">Confirm Pass</label>
+                <div class="col-8">
+                  <input class="form-control" type="password" value="" id="confirm-password" placeholder=" Confirm Password" required>
+                </div>
+            </div>
+
+            <!-- Dropdown selector-->
+            <div class="text-left form-group row">
+                <label class="mr-sm-2" for="dndversion">Primary DnD Edition</label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 col-4" id="dndversion">
+                    <option selected>Choose...</option>
+                    <option value="1">DnD 2e</option>
+                    <option value="2">DnD 3e</option>
+                    <option value="3">DnD 3.5</option>
+                    <option value="4">DnD 4e</option>
+                    <option value="5">DnD 5e</option>
+                    <option value="6">Homebrew</option>              
+                    <option value="7">Other</option>
+                </select>
+            </div>
+
+            <!-- Remember Me / Login-->
+            <div class="checkbox mb-3">
+                <label>
+                <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <div class="btn-group justify-content-center col-12">
+                    <a href="#" class="btn btn-outline-primary text-light btn-lg btn-block mr-5">Login</a>
+                    <a href="#" class="btn btn-outline-primary text-light btn-lg btn-block">Clear</a>
+                  </div>
+        </form>
+    </main>
+
+    <!-- Fluid footer, scrools with the page.-->
+    <footer class="text-white">
+            <div class="container-fluid fixed-bottom bg-dark">
+                <div class="col-12">
+                    <div class="text-right">
+                        <h6>© 2018 Copyright: NPCTracker.Com</h6>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+        <!-- 
+
+        <form class="form-signin">
+            <!-- First row of buttons - ->
+            <div class="form-check form-check-inline">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control mr-2" placeholder="Email address" required autofocus>
+                <br>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control mr-2" placeholder="Password" required>
+                <label for="inputPassword" class="sr-only">First Name</label>
+                <input type="password" id="inputPassword" class="form-control mr-2" placeholder="First Name" required>
+                <br>            
+            </div>
+            <br>
+            <!-- Second Row- ->
+            <div class="form-check form-check-inline mt-3">
+                    <label for="inputEmail" class="sr-only">Confirm Email</label>
+                    <input type="email" id="inputEmail" class="form-control mr-2" placeholder="Confirm Email" required autofocus>
+                    <br>
+                    <label for="inputPassword" class="sr-only">Confirm Password</label>
+                    <input type="password" id="inputPassword" class="form-control mr-2" placeholder="Confirm Password" required>
+                    <label for="inputPassword" class="sr-only">Last Name</label>
+                    <input type="password" id="inputPassword" class="form-control mr-2" placeholder="Last Password" required>
+                    <br>
+            </div>
+            <br>
+            <!--3rd row - radial- ->
+            <div class="form-check form-check-inline col-6 pt-3 pb-3">
+                <label class="form-check-label form-check-inline"> 
+                    <p class="mr-1">Gender (optional)</p> 
+                </label>
+
+                <label for="radio1" class="form-check-label form-check-inline">    
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
+                    <p>Male</p>
+                </label>
+
+                <label for="radio2" class="form-check-label form-check-inline">  
+                    <input type="radio" class="form-check-input ml-1" id="radio2" name="optradio" value="Felame" checked>
+                    <p>Female</p>
+                </label>
+
+            <!-- 3rd Row - Age and DnD Version- ->
+                    <label for="age" class="col-1 col-form-label">Age</label>
+                    <div class="col-2">
+                      <input class="form-control" type="number" value="" min="18" max="70" id="age">
+                    </div>
+            
+            <!--DnD Version Selector- ->
+            <label class="mr-sm-2" for="dndversion">Version</label>
+            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="dndversion">
+              <option selected>Choose...</option>
+              <option value="1">DnD 2e</option>
+              <option value="1">DnD 3e</option>
+              <option value="2">DnD 3.5</option>
+              <option value="3">DnD 4e</option>
+              <option value="3">DnD 5e</option>
+              <option value="3">Homebrew</option>              
+              <option value="3">Other</option>
+            </select>             
+            </div>
+            -->
+            
