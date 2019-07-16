@@ -52,6 +52,7 @@
     url(../images/loginback.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .indexback
@@ -67,6 +68,8 @@
     url(../images/indexback.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
 }
 
 .npcback 
@@ -82,6 +85,7 @@
     url(../images/npcback.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .registerback {
@@ -96,6 +100,7 @@
     url(../images/dndregister.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .aboutmainback {
@@ -125,6 +130,7 @@
     url(../images/iconback.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 html, body {

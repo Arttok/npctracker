@@ -1,0 +1,56 @@
+/* This is only used for the index.html page */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .mobileb {
+        display: none;
+    }
+    
+    #mcontent {
+        display: block;
+    }
+
+    #bcontent {
+        display: initial;
+    }  
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px){
+    .mobileb {
+        display: none;
+    }
+    
+    #mcontent {
+        display: block;
+    }
+
+    #bcontent {
+        display: initial;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .mobileb {
+        display: none;
+    }
+    
+    /*header content on index */
+    #mcontent {
+        display: block;
+    }
+
+    /*body content on index page */
+    #bcontent {
+        display: initial;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+} 
