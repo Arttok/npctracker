@@ -1,3 +1,5 @@
+/*This is only used for the about.html page */
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -20,8 +22,8 @@
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
-      flex: 50%;
-      max-width: 50%;
+      flex: 100%;
+      max-width: 100%;
     }
   }
   
