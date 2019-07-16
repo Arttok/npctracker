@@ -55,7 +55,8 @@
 
     <!-- Main content section, user login with email & password-->
     <main class="text-light p-5">
-        <form class="form-signin">
+        <!--Should be method POST.-->
+        <form class="form-signin" action="npcadd.html" method="GET">
         <h1 class="h3 mb-3 font-weight-normal font-weight-bold">Login</h1>
         <p class="text-left col-4 offset-md-4" id="logintxt">Welcome to NPCTracker. The one place where all NPC's matter! A one stop shop for all your NPC's information.</p>
         Please <div class="font-weight-bold d-inline">login</div> below to continue!
@@ -70,7 +71,7 @@
             <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <a class="btn btn-outline-primary text-light btn-lg btn-block col-2 offset-md-5" href="npcadd.html">Login</a>
+        <button class="btn btn-outline-primary text-light col-2" type="submit" value="Go to NPCAdd">Login</button>
         </form>
     </main>
 
