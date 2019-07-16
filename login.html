@@ -23,18 +23,18 @@
     <link href="signin.css" rel="stylesheet">
   </head>
  
-  <body class="text-center bg-secondary h-100">
+  <body class="text-center bg-secondary h-100 loginback">
 
      <!-- Header / Navigation section-->
      <header>
             <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
                 <h5 class="my-0 mr-md-auto font-weight-normal"> 
-                        <a class="btn btn-outline-primary text-light" href="#">
+                        <a class="btn btn-outline-primary text-light" href="index.html">
                             Home
                         </a>
                 </h5> 
                 <nav class="my-2 my-md-0 mr-md-3 ">
-                        <a class="btn btn-outline-primary text-light" href="#">Register</a> 
+                        <a class="btn btn-outline-primary text-light" href="registration.html">Register</a> 
                     
                     <!-- Dropdown Menu bar that list various other sections of the page-->
                     <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
@@ -42,10 +42,10 @@
                             Menu
                         </a>
                         <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item btn text-light menu mask" href="#">Home</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Add</a>
+                            <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
+                            <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
                             <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">About</a>
+                            <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
                             <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
                         </div>
                     </div>
@@ -56,7 +56,6 @@
     <!-- Main content section, user login with email & password-->
     <main class="text-light p-5">
         <form class="form-signin">
-        <img class="mb-4" src="images/dndlogin.png" alt="dndlogin" id="dndlogin">
         <h1 class="h3 mb-3 font-weight-normal font-weight-bold">Login</h1>
         <p class="text-left col-4 offset-md-4" id="logintxt">Welcome to NPCTracker. The one place where all NPC's matter! A one stop shop for all your NPC's information.</p>
         Please <div class="font-weight-bold d-inline">login</div> below to continue!
@@ -71,7 +70,7 @@
             <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <a class="btn btn-outline-primary text-light btn-lg btn-block col-2 offset-md-5" href="#">Login</a>
+        <a class="btn btn-outline-primary text-light btn-lg btn-block col-2 offset-md-5" href="npcadd.html">Login</a>
         </form>
     </main>
 
