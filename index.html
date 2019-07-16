@@ -24,7 +24,7 @@
     <link href="jumbotron.css" rel="stylesheet">
 </head>
 
-<body class="text-center bg-secondary h-100">
+<body class="text-center bg-secondary h-100 indexback">
     
     <!-- Header / Navigation menu, username & password login section-->
     <header>
@@ -35,12 +35,12 @@
                     </a>
             </h5> 
             <nav class="my-2 my-md-0 mr-md-3 btn-group ">
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Search">
-                    <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Search">
+                <form class="form-inline mt-2 mt-md-0 form-label-group" action="npcadd.html">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Search" required>
+                    <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Search" required>
+                    <button class="btn btn-outline-primary text-light" type="submit" value="Go to NPCAdd">Sign in</button>
                 </form>
-                <a class="btn btn-outline-primary text-light" href="#">Login</a>
-                <a class="btn btn-outline-primary text-light ml-3" href="#">About</a>
+                <a class="btn btn-outline-primary text-light ml-3" href="about.html">About</a>
             </nav>
         </div>
     </header>
@@ -50,12 +50,11 @@
         <div class="row justify-content-center align-items-center">
             <main id="intro" class="inner cover text-light">
                 <h1 class="cover-heading font-weight-bold"><u>NPCTracker</u></h1>
-                <img src="images/dndicon.png" class="img-fluid p-3" id="dndicon" alt="DnD Banner">
                 <p class="lead col-4 offset-md-4 text-center pt-2">NPCTracker is a website to help Dungeon Master's (DMs) track their Non-player Characters (NPC's)
                     across multiple campaigns. DM's are able to save their characters based upon the campaign the NPC is in, with the ability to track important informaiton.
                 </p>
-                <p class="lead col-4 offset-md-4 pt-3">
-                    <a class="btn btn-outline-primary text-light btn-lg btn-block" href="#">Get Started!</a>
+                <p class="lead col-4 offset-md-4 pt-">
+                    <a class="btn btn-outline-primary text-light btn-lg btn-block" href="registration.html">Get Started!</a>
                 </p>
             </main>
         </div>

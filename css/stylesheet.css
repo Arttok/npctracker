@@ -51,5 +51,18 @@
     /* Says what image should appear in the backgorund */
     url(https://static.wixstatic.com/media/5b4ae0_893aa3312e1749eb836914d6b8994398.jpg/v1/fill/w_630,h_448,al_c,q_80,usm_0.66_1.00_0.01/5b4ae0_893aa3312e1749eb836914d6b8994398.jpg);
     background-size: cover;
-    height: 100vh;
+}
+
+.indexback 
+{
+    /* Makes the background transparent so it is easy to read text */
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+
+    /* Says what image should appear in the backgorund */
+    url(https://vignette.wikia.nocookie.net/forgottenrealms/images/d/de/DotMM-urchins.jpg/revision/latest?cb=20190318234432);
+    background-size: cover;
 }
