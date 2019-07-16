@@ -51,6 +51,7 @@
     /* Says what image should appear in the backgorund */
     url(../images/loginback.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .indexback
@@ -80,6 +81,7 @@
     /* Says what image should appear in the backgorund */
     url(../images/npcback.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .registerback {
