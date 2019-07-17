@@ -63,7 +63,7 @@
                 <h2>Add your NPC here!</h2>
             </div>
                 <!-- This is supposed to be GET since no PII is being sent-->
-                <form class="form-npcadd" method="GET">
+                <form class="form-npcadd" action="#" method="GET">
                         <input class="col-2 p-2 align-items-center" type="file" id="myFile">
                         <br>
                         <!-- First row of buttons -->
@@ -81,7 +81,7 @@
                         <!-- Second Row-->
                         <div class="form-check form-check-inline mt-3">
                                 <label for="npcparty" class="sr-only">Party Alignment</label>
-                                <input type="text" id="npcparty" class="form-control mr-2" placeholder="NPC's view on Party" required autofocus>
+                                <input type="text" id="npcparty" class="form-control mr-2" placeholder="NPC's view on Party" required>
                                 <br>
                                 <label for="campaign" class="sr-only">Campaign Name</label>
                                 <input type="text" id="campaign" class="form-control mr-2" placeholder="Campaign" required>
@@ -92,43 +92,36 @@
                         <br>
                         <!--3rd row - radial-->
                         <div class="form-check form-check-inline col-6 pt-3 pb-3">
-                            <label class="form-check-label form-check-inline"> 
-                                <p class="mr-1">Gender</p> 
-                            </label>
+                            <p class="h6 pb-2 mr-2">Gender</p>            
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
+                            <label for="radio1" class="form-check-label form-check-inline pb-2"> Male </label>
+                            
+                            <input type="radio" class="form-check-input ml-1" id="radio2" name="optradio" value="Female">
+                            <label for="radio2" class="form-check-label form-check-inline pb-2">Female </label>
             
-                            <label for="radio1" class="form-check-label form-check-inline">    
-                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
-                                <p>Male</p>
-                            </label>
-            
-                            <label for="radio2" class="form-check-label form-check-inline">  
-                                <input type="radio" class="form-check-input ml-1" id="radio2" name="optradio" value="Felame" checked>
-                                <p>Female</p>
-                            </label>
-            
-                        <!-- 3rd Row - Age and DnD Version-->
-                                <label for="age" class="col-1 col-form-label">Age</label>
-                                <div class="col-3">
-                                    <input class="form-control" type="number" value="" min="5" max="600" id="age" placeholder="5-600">
-                                </div>
+                            <!-- 3rd Row - Age and DnD Version-->
+                            <label for="age" class="col-1 col-form-label">Age</label>
+                            <div class="col-3">
+                                <input class="form-control" type="number" value="" min="5" max="600" id="age" placeholder="5-600">
+                            </div>
                         
-                        <!--DnD Version Selector-->
-                        <label class="mr-sm-2" for="dndversion">Alignment</label>
-                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="dndversion">
-                          <option selected>Pick...</option>
-                          <option value="1">Lawful Good</option>
-                          <option value="1">Lawful Neutral</option>
-                          <option value="2">Lawful Evil</option>
-                          <option value="3">Neutral Good</option>
-                          <option value="3">Neutral Neutral</option>
-                          <option value="3">Neutral Evil</option>
-                          <option value="3">Chaotic Good</option>
-                          <option value="3">Chaotic Neutral</option>
-                          <option value="3">Chaotic Evil</option>
-                        </select>             
+                            <!--DnD Version Selector-->
+                            <label class="mr-sm-2" for="dndversion">Alignment</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="dndversion">
+                                <option selected>Pick...</option>
+                                <option value="1">Lawful Good</option>
+                                <option value="1">Lawful Neutral</option>
+                                <option value="2">Lawful Evil</option>
+                                <option value="3">Neutral Good</option>
+                                <option value="3">Neutral Neutral</option>
+                                <option value="3">Neutral Evil</option>
+                                <option value="3">Chaotic Good</option>
+                                <option value="3">Chaotic Neutral</option>
+                                <option value="3">Chaotic Evil</option>
+                            </select>             
                         </div>                        
                         <div class="form-group col-4 offset-md-4">
-                                <textarea class="form-control rounded-0" id="npcdescription" placeholder="Enter in any additional information you have have on the NPC here! Such as equipment, levels, previous encounter with the player party, etc." id="exampleFormControlTextarea2" rows="3"></textarea>
+                                <textarea class="form-control rounded-0" id="npcdescription" placeholder="Enter in any additional information you have have on the NPC here! Such as equipment, levels, previous encounter with the player party, etc." rows="3"></textarea>
                         </div>
                         <div class="btn-group justify-content-center col-6">
                                 <input type="submit" class="btn btn-outline-primary text-light btn-sm btn-block mr-5 font-weight-bold" value="Submit">
@@ -141,8 +134,8 @@
             <div class="row justify-content-center">
                 <div class="col-xs-10 col-md-10">
                     <section class="text-light table-sm ">
+                        <h3 class="pt-3">Last 5 NPC's Added</h3>
                         <table class="table">
-                            <h3 class="pt-3">Last 5 NPC's Added</h3>
                                 <thead>
                                 <tr>
                                     <th scope="col">NPC Name</th>

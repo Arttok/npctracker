@@ -53,6 +53,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-attachment: fixed;
 }
 
 .indexback
@@ -86,6 +87,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-attachment: fixed;
 }
 
 .registerback {
@@ -101,6 +103,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-attachment: fixed;
 }
 
 .aboutmainback {
@@ -113,9 +116,10 @@
 
     /* Says what image should appear in the backgorund */
     url(../images/iconback.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
     height: 100%;
+    background-attachment: fixed;
 }
 
 .aboutback {
@@ -131,6 +135,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-attachment: fixed;
 }
 
 html, body {
