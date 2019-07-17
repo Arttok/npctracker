@@ -17,85 +17,86 @@
 
     <!-- Own Style sheet and Media Queries-->
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/media_queries.css" />
+    <link rel="stylesheet" href="css/regmedia.css" />
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 
   </head>
  
-  <body class="text-center bg-secondary h-100 registerback">
+  <body class="text-center bg-secondary h-100 w-100 registerback" id="mobilebody">
 
     <!-- Header / Navigation section-->
+    <!-- Header / Navigation section-->
     <header>
-            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
-                <h5 class="my-0 mr-md-auto font-weight-normal"> 
-                        <a class="btn btn-outline-primary text-light" href="#">
-                            Home
-                        </a>
-                </h5> 
-                <nav class="my-2 my-md-0 mr-md-3 ">
-                        <a class="btn btn-outline-primary text-light" href="#">Login</a> 
-                    
-                    <!-- Dropdown Menu bar that list various other sections of the page-->
-                    <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
-                        <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu
-                        </a>
-                        <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item btn text-light menu mask" href="#">Home</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Add</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">About</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
-                        </div>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+            <h1 class="h5 my-0 mr-md-auto font-weight-normal"> 
+                    <a class="btn btn-outline-primary text-light" href="index.html">
+                        Home
+                    </a>
+            </h1> 
+            <nav class="my-2 my-md-0 mr-md-3 ">
+                    <a class="btn btn-outline-primary text-light" href="login.html">Login</a> 
+                
+                <!-- Dropdown Menu bar that list various other sections of the page-->
+                <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                    <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
+                        <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">About</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <!-- Main content section, user login with email & password-->
-    <main class="text-light">
-            <h1 class="mb-1 font-weight-normal font-weight-bold">NPCTracker Registration</h1>
-            <p class="text-right col-4 offset-md-3" id="logintxt"> Where every NPC matters!</p>
+    <main class="text-light labell">
+            <h1 class="mb-1 font-weight-normal font-weight-bold"><span class="labelm">NPCTracker </span>Registration</h1>
+            <p class="text-right col-4 offset-md-3 labelm" id="logintxt"> Where every NPC matters!</p>
         <!--Form input fields-->
         <form class ="form-signin col-8 offset-md-4">
             <div class="form-group row">
-                <label for="email" class="col-2">Email</label>
+                <label for="email" class="col-2 labelm">Email</label>
                 <div>
                   <input class="form-control" type="email" value="" placeholder="Your Email" id="email" required>
                 </div>
             </div>
             <div class="form-group row">
-                <label for="username"  class="col-2">Username</label>
+                <label for="username"  class="col-2 labelm">Username</label>
                 <div>
                   <input class="form-control" type="search" value="" placeholder="Username-6-15 characters" id="username" required>
                 </div>
             </div>
             <div class="form-group row">
-                    <label for="confirmuser"  class="col-2">Confirm User</label>
+                    <label for="confirmuser"  class="col-2 labelm">Confirm User</label>
                     <div>
                       <input class="form-control" type="search" value="" placeholder="Username-6-15 characters" id="confirmuser" required>
                     </div>
             </div>
             <div class="form-group row">
-                <label for="password"  class="col-2">Password</label>
+                <label for="password"  class="col-2 labelm">Password</label>
                 <div>
                   <input class="form-control" type="password" value="" id="password" placeholder="Password" required>
                 </div>
             </div>
             <div class="form-group row">
-                <label for="email"  class="col-2">Confirm Pass</label>
+                <label for="email"  class="col-2 labelm">Confirm Pass</label>
                 <div>
                   <input class="form-control" type="password" value="" id="confirm-password" placeholder=" Confirm Password" required>
                 </div>
             </div>
 
             <!-- Dropdown selector-->
-            <div class="text-left form-group row col-6">
-                <label class="mr-sm-2" for="dndversion">Primary DnD Edition</label>
-                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 col-4" id="dndversion">
-                    <option selected>Choose...</option>
+            <div class="text-left form-group row col-6 dndbtn">
+                <label class="mr-sm-2 labelm" for="dndversion">Primary DnD Edition</label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 col-4 dndbtn1" id="dndversion">
+                    <option selected>Select</option>
                     <option value="1">DnD 2e</option>
                     <option value="2">DnD 3e</option>
                     <option value="3">DnD 3.5</option>
@@ -105,8 +106,9 @@
                     <option value="7">Other</option>
                 </select>
             </div>
-            <!-- Remember Me / Login-->
-            <div class="col-6">
+
+            <!-- How did you hear about us-->
+            <div class="col-6" id="radiomobile">
                 <p>How did you hear about us?</p>
                 <label class="radio-inline">
                         <input type="radio" name="optradio" checked>Internet
@@ -120,10 +122,17 @@
                     <label class="radio-inline ml-1">
                         <input type="radio" name="optradio">Other
                     </label>
-            </div>
-            <div class="btn-group col-12 pb-5">
-                <button class="btn btn-outline-primary text-light btn-lg mr-5 col-3" type="submit" value="Go to NPCAdd">Login</button>
-                <input type="reset" class="btn btn-outline-primary text-light btn-lg col-3" value="Reset">
+                </div>
+
+            <!--Break specifically for @media-->
+            <br class="mediabreak"> 
+
+            <div class="btn-group col-12 pb-5" id="btnmobile">
+                <button type="submit" class="btn btn-outline-primary text-light btn-lg mr-5 col-3" value="Go to NPCAdd">Register</button>
+                
+                <!--Break specifically for @media-->
+                <br class="mediabreak">
+                <button type="reset" class="btn btn-outline-primary text-light btn-lg col-3" value="Reset" id="resetbtn"> Reset </button>
             </div>
         </form>
     </main>

@@ -2,14 +2,17 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    /*button content to be effected */
     .mobileb {
         display: none;
     }
     
+    /*main content to be effected */
     #mcontent {
         display: block;
     }
 
+    /*body content to be effected */
     #bcontent {
         display: initial;
     }  
@@ -17,14 +20,17 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px){
+    /*button content to be effected */
     .mobileb {
         display: none;
     }
-    
+   
+    /*main content to be effected */
     #mcontent {
         display: block;
     }
 
+    /*body content to be effected */
     #bcontent {
         display: initial;
     }
@@ -32,6 +38,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    /*button content to be effected */
     .mobileb {
         display: none;
     }

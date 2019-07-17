@@ -1,0 +1,138 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    html {
+        overflow-x: hidden;
+    }
+    /*Hides excess text on smaller screens */
+    .labelm {
+        display: none;
+    }
+
+    /* Has Registration text go left */
+    .labell {
+        text-align: left;
+    }
+    
+    #mobilebody {
+        float: left;
+        display: inline-table;
+    }
+
+    #navmenu {
+        padding-bottom: 10px;
+        width: 200%
+    }
+
+    .dndbtn {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .dndbtn1 {
+        font-size: 16px;
+        padding-right: 100%;
+    }
+
+    .btn-group button {
+        cursor: pointer; /* Pointer/hand icon */
+        display: block !important; /* Make the buttons appear below each other */
+        padding-right: 50%;
+      }
+      
+      #btnmobile {
+          padding-left: 0px;
+          display: inline-block;
+          padding-bottom: 10px;
+      }
+
+      #radiomobile {
+        float: left;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .mediabreak {
+        display: static;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  and (max-width: 768px) 
+{
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    /*Hides excess text on smaller screens */
+    .labelm {
+        display: none;
+    }
+
+    /* Has Registration text go left */
+    .labell {
+        text-align: left;
+    }
+    
+    #mobilebody {
+        float: left;
+        display: inline-table;
+    }
+
+    #navmenu {
+        width: 100%;
+        padding-bottom: 10px;
+        background-color: red !important;
+    }
+
+    #navheader {
+        float: left !important;
+        background-color: yellow !important;
+
+    }
+
+    .dndbtn {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .btn-group button {
+        cursor: pointer; /* Pointer/hand icon */
+        display: block !important; /* Make the buttons appear below each other */
+        padding-right: 50%;
+      }
+      
+      #btnmobile {
+          padding-left: 0px;
+          display: inline-block;
+          padding-bottom: 10px;
+      }
+
+      #radiomobile {
+        float: left;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .mediabreak {
+        display: static;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) 
+{
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+
+}
