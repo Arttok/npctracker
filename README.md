@@ -16,3 +16,5 @@ The secondary audience is the players of DnD. These players will greatly benefit
 
 ### Credits
 Content provided by [WOTC](https://company.wizards.com/)
+NPCTracker is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. 
+Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
