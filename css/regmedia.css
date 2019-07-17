@@ -1,25 +1,99 @@
 /* This is only used for the index.html page */
 
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
- 
+    /*Hides excess text on smaller screens */
+    .labelm {
+        display: none;
+    }
+
+    #menup {
+        display: inline;
+    }
+    /* Has Registration text go left */
+    .labell {
+        text-align: left;
+    }
+
+    .mobilem, #dropdownMenuLink {   
+        background-color: blue;
+        margin: 0px;
+    }
+
+    #mobilebody {
+        float: left;
+        display: inline-table;
+        width: 100%
+    }
+
+    .regbutton
+    {
+        width: 200%;
+    }
+
+    #dndversion {
+        padding: 16px 60px;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px)
+@media only screen and (min-width: 600px) and (max-width: 768px)
 {
-   
+    /*Hides excess text on smaller screens */
+    .labelm {
+        display: none;
+    }
+
+    /* Has Registration text go left */
+    .labell {
+        text-align: left;
+    }
+
+    .mobilem, #dropdownMenuLink {   
+        background-color: red;
+        margin: 0px;
+    }
+
+    #mobilebody {
+        float: left;
+        display: inline-table;
+        width: 100%
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px)
+@media only screen and (min-width: 768px) and (max-width: 992px)
 {
+    /*Hides excess text on smaller screens */
+    .labelm {
+        display: none;
+    }
 
+    /* Has Registration text go left */
+    .labell {
+        text-align: left;
+    }
+
+    .mobilem, #dropdownMenuLink {   
+        background-color: orange;
+        margin: 0px;
+    }
+
+    #mobilebody {
+        float: left;
+        display: inline-table;
+        width: 100%
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) 
+@media only screen and (min-width: 768px) and (max-width: 992px)
 {
 
 } 
@@ -27,5 +101,5 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 
 {
-    
+
 } 
