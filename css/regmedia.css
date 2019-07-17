@@ -53,7 +53,7 @@
     }
 
     .mediabreak {
-        display: static;
+        display: inline;
     }
 } 
 
@@ -115,7 +115,7 @@
     }
 
     .mediabreak {
-        display: static;
+        display: inline;
     }
 } 
 
