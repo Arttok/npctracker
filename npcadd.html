@@ -30,112 +30,117 @@
 <body class="text-center bg-secondary h-100 text-light npcback">
     
     <!-- Header / Navigation section-->
-    <header>
-            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
-                <h1 class="h5 my-0 mr-md-auto font-weight-normal"> 
-                        <a class="btn btn-outline-primary text-light" href="index.html">
-                            Home
-                        </a>
-                </h1> 
-                <nav class="my-2 my-md-0 mr-md-3 ">
-                        <a class="btn btn-outline-primary text-light" href="login.html">Login</a> 
-                    
-                    <!-- Dropdown Menu bar that list various other sections of the page-->
-                    <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
-                        <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu
-                        </a>
-                        <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
-                            <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
-                            <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
-                        </div>
+    <nav>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+            <h1 class="h5 my-0 mr-md-auto font-weight-normal"> 
+                    <a class="btn btn-outline-primary text-light" href="index.html">
+                        Home
+                    </a>
+            </h1> 
+            <div class="my-2 my-md-0 mr-md-3 ">
+                    <a class="btn btn-outline-primary text-light" href="login.html">Login</a> 
+                
+                <!-- Dropdown Menu bar that list various other sections of the page-->
+                <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                    <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
+                        <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
+                        <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
                     </div>
-                </nav>
+                </div>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <main>
-            <div class="text-light">
-                <h1>NPC Tracker</h1>
-                <h2>Add your NPC here!</h2>
-            </div>
-                <!-- This is supposed to be GET since no PII is being sent-->
-                <form class="form-npcadd" action="#" method="GET">
-                        <input class="col-2 p-2 align-items-center" type="file" id="myFile">
+    <!--Form to add NPC information-->
+    <main>
+        <div class="text-light">
+            <h1>NPC Tracker</h1>
+            <h2>Add your NPC here!</h2>
+        </div>
+            <!-- NPC Add Form-->
+            <form class="form-npcadd" action="#" method="GET"> <!--method should be GET-->
+                    <input class="col-2 p-2 align-items-center" type="file" id="myFile">
+                    <br>
+                    <!-- First row of buttons -->
+                    <div class="form-check form-check-inline">
+                        <label for="npcname" class="sr-only">npcname</label>
+                        <input type="text" id="npcname" class="form-control mr-2" placeholder="NPC Name" required autofocus>
                         <br>
-                        <!-- First row of buttons -->
-                        <div class="form-check form-check-inline">
-                            <label for="npcname" class="sr-only">npcname</label>
-                            <input type="text" id="npcname" class="form-control mr-2" placeholder="NPC Name" required autofocus>
+                        <label for="npcrace" class="sr-only">npcrace</label>
+                        <input type="text" id="npcrace" class="form-control mr-2" placeholder="NPC Race" required>
+                        <label for="npclocation" class="sr-only">NPC Location</label>
+                        <input type="text" id="npclocation" class="form-control mr-2" placeholder="Last location seen!" required>
+                        <br>            
+                    </div>
+                    <br>
+                    <!-- Second Row-->
+                    <div class="form-check form-check-inline mt-3">
+                            <label for="npcparty" class="sr-only">Party Alignment</label>
+                            <input type="text" id="npcparty" class="form-control mr-2" placeholder="NPC's view on Party" required>
                             <br>
-                            <label for="npcrace" class="sr-only">npcrace</label>
-                            <input type="text" id="npcrace" class="form-control mr-2" placeholder="NPC Race" required>
-                            <label for="npclocation" class="sr-only">NPC Location</label>
-                            <input type="text" id="npclocation" class="form-control mr-2" placeholder="Last location seen!" required>
-                            <br>            
-                        </div>
-                        <br>
-                        <!-- Second Row-->
-                        <div class="form-check form-check-inline mt-3">
-                                <label for="npcparty" class="sr-only">Party Alignment</label>
-                                <input type="text" id="npcparty" class="form-control mr-2" placeholder="NPC's view on Party" required>
-                                <br>
-                                <label for="campaign" class="sr-only">Campaign Name</label>
-                                <input type="text" id="campaign" class="form-control mr-2" placeholder="Campaign" required>
-                                <label for="npcgoal" class="sr-only">Goals</label>
-                                <input type="text" id="npcgoal" class="form-control mr-2" placeholder="NPC Goal's" required>
-                                <br>
-                        </div>
-                        <br>
-                        <!--3rd row - radial-->
-                        <div class="form-check form-check-inline col-6 pt-3 pb-3">
-                            <p class="h6 pb-2 mr-2">Gender</p>            
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
-                            <label for="radio1" class="form-check-label form-check-inline pb-2"> Male </label>
-                            
-                            <input type="radio" class="form-check-input ml-1" id="radio2" name="optradio" value="Female">
-                            <label for="radio2" class="form-check-label form-check-inline pb-2">Female </label>
-            
-                            <!-- 3rd Row - Age and DnD Version-->
-                            <label for="age" class="col-1 col-form-label">Age</label>
-                            <div class="col-3">
-                                <input class="form-control" type="number" value="" min="5" max="600" id="age" placeholder="5-600">
-                            </div>
+                            <label for="campaign" class="sr-only">Campaign Name</label>
+                            <input type="text" id="campaign" class="form-control mr-2" placeholder="Campaign" required>
+                            <label for="npcgoal" class="sr-only">Goals</label>
+                            <input type="text" id="npcgoal" class="form-control mr-2" placeholder="NPC Goal's" required>
+                            <br>
+                    </div>
+                    <br>
+                    <!--3rd row - radial-->
+                    <div class="form-check form-check-inline col-6 pt-3 pb-3">
+                        <p class="h6 pb-2 mr-2">Gender</p>            
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Male" checked>
+                        <label for="radio1" class="form-check-label form-check-inline pb-2"> Male </label>
                         
-                            <!--DnD Version Selector-->
-                            <label class="mr-sm-2" for="dndversion">Alignment</label>
-                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="dndversion">
-                                <option selected>Pick...</option>
-                                <option value="1">Lawful Good</option>
-                                <option value="1">Lawful Neutral</option>
-                                <option value="2">Lawful Evil</option>
-                                <option value="3">Neutral Good</option>
-                                <option value="3">Neutral Neutral</option>
-                                <option value="3">Neutral Evil</option>
-                                <option value="3">Chaotic Good</option>
-                                <option value="3">Chaotic Neutral</option>
-                                <option value="3">Chaotic Evil</option>
-                            </select>             
-                        </div>                        
-                        <div class="form-group col-4 offset-md-4">
-                                <textarea class="form-control rounded-0" id="npcdescription" placeholder="Enter in any additional information you have have on the NPC here! Such as equipment, levels, previous encounter with the player party, etc." rows="3"></textarea>
+                        <input type="radio" class="form-check-input ml-1" id="radio2" name="optradio" value="Female">
+                        <label for="radio2" class="form-check-label form-check-inline pb-2">Female </label>
+        
+                        <!-- 3rd Row - Age and DnD Version-->
+                        <label for="age" class="col-1 col-form-label">Age</label>
+                        <div class="col-3">
+                            <input class="form-control" type="number" value="" min="5" max="600" id="age" placeholder="5-600">
                         </div>
-                        <div class="btn-group justify-content-center col-6">
-                                <input type="submit" class="btn btn-outline-primary text-light btn-sm btn-block mr-5 font-weight-bold" value="Submit">
-                                <input type="reset" class="btn btn-outline-primary text-light btn-sm btn-block font-weight-bold" value="Reset">
-                        </div>
-                    </form>
-            </main>
+                    
+                        <!--DnD Version Selector-->
+                        <label class="mr-sm-2" for="dndversion">Alignment</label>
+                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="dndversion">
+                            <option selected>Pick...</option>
+                            <option value="1">Lawful Good</option>
+                            <option value="1">Lawful Neutral</option>
+                            <option value="2">Lawful Evil</option>
+                            <option value="3">Neutral Good</option>
+                            <option value="3">Neutral Neutral</option>
+                            <option value="3">Neutral Evil</option>
+                            <option value="3">Chaotic Good</option>
+                            <option value="3">Chaotic Neutral</option>
+                            <option value="3">Chaotic Evil</option>
+                        </select>             
+                    </div>                        
+                    <div class="form-group col-4 offset-md-4">
+                            <textarea class="form-control rounded-0" id="npcdescription" placeholder="Enter in any additional information you have have on the NPC here! Such as equipment, levels, previous encounter with the player party, etc." rows="3"></textarea>
+                    </div>
+                    <div class="btn-group justify-content-center col-6">
+                            <input type="submit" class="btn btn-outline-primary text-light btn-sm btn-block mr-5 font-weight-bold" value="Submit">
+                            <input type="reset" class="btn btn-outline-primary text-light btn-sm btn-block font-weight-bold" value="Reset">
+                    </div>
+                </form>
+    </main>
 
-    <div class="container pb-3">
-            <div class="row justify-content-center">
-                <div class="col-xs-10 col-md-10">
-                    <section class="text-light table-sm ">
-                        <h3 class="pt-3">Last 5 NPC's Added</h3>
-                        <table class="table">
+    <!--Tables where NPC info is added-->
+    <section>
+        <div class="container pb-3">
+                <div class="row justify-content-center">
+                    <div class="col-xs-10 col-md-10">
+                        <div class="text-light table-sm ">
+                            <h3 class="pt-3">Last 5 NPC's Added</h3>
+                            
+                            <!-- Table with NPC information added-->
+                            <table class="table">
                                 <thead>
                                 <tr>
                                     <th scope="col">NPC Name</th>
@@ -156,14 +161,14 @@
                                     <td>Lawful-Good</td>
                                     <td>
                                         <button class='btn btn-sm bg-transparent'>
-                                           <i class="fas fa-pen text-light" title="Edit"></i>
+                                        <i class="fas fa-pen text-light" title="Edit"></i>
                                         </button>
                                     </td>
                                     <td>
-                                            <button class='btn btn-sm bg-transparent'>
-                                                    <i class="fas fa-trash text-light"></i>
-                                            </button>
-                                        </td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-trash text-light"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Lady Gracethana</td>
@@ -172,15 +177,15 @@
                                     <td>Tomb of Annihilation</td>
                                     <td>Lawful-Good</td>
                                     <td>
-                                            <button class='btn btn-sm bg-transparent'>
-                                               <i class="fas fa-pen text-light" title="Edit"></i>
-                                            </button>
-                                        </td>
-                                        <td>
-                                                <button class='btn btn-sm bg-transparent'>
-                                                        <i class="fas fa-trash text-light"></i>
-                                                </button>
-                                            </td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-pen text-light" title="Edit"></i>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-trash text-light"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Krislyassa</td>
@@ -189,15 +194,15 @@
                                     <td>Tomb of Annihilation</td>
                                     <td>Chaotic-Good</td>
                                     <td>
-                                            <button class='btn btn-sm bg-transparent'>
-                                               <i class="fas fa-pen text-light" title="Edit"></i>
-                                            </button>
-                                        </td>
-                                        <td>
-                                                <button class='btn btn-sm bg-transparent'>
-                                                        <i class="fas fa-trash text-light"></i>
-                                                </button>
-                                            </td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-pen text-light" title="Edit"></i>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-trash text-light"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Theratra Stormlord</td>
@@ -206,15 +211,15 @@
                                     <td>Triump</td>
                                     <td>Lawful-Evil</td>
                                     <td>
-                                            <button class='btn btn-sm bg-transparent'>
-                                               <i class="fas fa-pen text-light" title="Edit"></i>
-                                            </button>
-                                        </td>
-                                        <td>
-                                                <button class='btn btn-sm bg-transparent'>
-                                                        <i class="fas fa-trash text-light"></i>
-                                                </button>
-                                            </td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-pen text-light" title="Edit"></i>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-trash text-light"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Lord Quomorn</td>
@@ -223,22 +228,23 @@
                                     <td>Ghost of Saltmarsh</td>
                                     <td>Neutral-Good</td>
                                     <td>
-                                            <button class='btn btn-sm bg-transparent'>
-                                               <i class="fas fa-pen text-light" title="Edit"></i>
-                                            </button>
-                                        </td>
-                                        <td>
-                                                <button class='btn btn-sm bg-transparent'>
-                                                        <i class="fas fa-trash text-light"></i>
-                                                </button>
-                                            </td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-pen text-light" title="Edit"></i>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button class='btn btn-sm bg-transparent'>
+                                        <i class="fas fa-trash text-light"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
-                    </section>
-                </div>    
+                        </div>
+                    </div>    
+                </div>
             </div>
-        </div>
+    </section>
 
     
     <!-- Fluid footer, scrools with page-->
