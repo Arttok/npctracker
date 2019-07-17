@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<!-- This is the Bonus Page-->
+<head class="h-100">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Add NPC</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- FontAwesome Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/dbcee74e1c.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Own Style sheet and Media Queries-->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/npcview.css" />
+
+</head>
+<!-- This is the Bonus Page-->
+
+<body class="text-center bg-secondary h-100 text-light npcback">
+    
+    <!-- Header / Navigation section-->
+    <nav>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+            <div class="h5 my-0 mr-md-auto font-weight-normal"> 
+                    <a class="btn btn-outline-primary text-light" href="index.html">
+                        Home
+                    </a>
+            </div> 
+            <div class="my-2 my-md-0 mr-md-3 ">
+                    <a class="btn btn-outline-primary text-light" href="login.html">Login</a> 
+                
+                <!-- Dropdown Menu bar that list various other sections of the page-->
+                <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                    <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
+                        <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
+                        <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
+                        <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Form to add NPC information-->
+    <main>
+        <div class="text-light">
+            <h1>NPC Tracker</h1>
+            <h2>View NPC's you have added!</h2>
+        </div>
+        <br>
+        <label class="mr-sm-2" for="dndversion">Campagin</label>
+        <select class="custom-select col-2 mb-2 mr-sm-2 mb-sm-0" id="dndversion">
+            <option value="0" selected>Select</option>
+            <option value="1">Tomb of Annihilation</option>
+            <option value="2">Ghost of Saltmarsh</option>
+            <option value="3">Triump</option>
+            <option value="4">All</option>
+        </select>  
+    </main>
+    <br>
+    <!--Tomb of Annihilation NPC-->
+    <section id="npc_table_1" class="npc_table">
+        <div class="container pb-3">
+                <div class="row justify-content-center">
+                    <div class="col-xs-10 col-md-10">
+                        <div class="text-light table-sm ">
+                            <h3 class="pt-3">Tomb of Annihilation NPC's</h3>
+                            
+                            <!-- Table with NPC information added-->
+                            <table class="table text-light">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">NPC Name</th>
+                                        <th scope="col">Race</th>
+                                        <th scope="col">Age</th>
+                                        <th scope="col">Campaign</th>
+                                        <th scope="col">Alignment</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Janiries the Wizard</td>
+                                        <td>Half-Elf</td>
+                                        <td>75</td>
+                                        <td>Ghost of Saltmarsh</td>
+                                        <td>Lawful-Good</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lady Gracethana</td>
+                                        <td>Human</td>
+                                        <td>28</td>
+                                        <td>Tomb of Annihilation</td>
+                                        <td>Lawful-Good</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Krislyassa</td>
+                                        <td>Dwarf</td>
+                                        <td>250</td>
+                                        <td>Tomb of Annihilation</td>
+                                        <td>Chaotic-Good</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Theratra Stormlord</td>
+                                        <td>Elf</td>
+                                        <td>173</td>
+                                        <td>Triump</td>
+                                        <td>Lawful-Evil</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lord Quomorn</td>
+                                        <td>Orc</td>
+                                        <td>24</td>
+                                        <td>Ghost of Saltmarsh</td>
+                                        <td>Neutral-Good</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Janiries the Wizard</td>
+                                        <td>Half-Elf</td>
+                                        <td>75</td>
+                                        <td>Ghost of Saltmarsh</td>
+                                        <td>Lawful-Good</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Janiries the Wizard</td>
+                                        <td>Half-Elf</td>
+                                        <td>75</td>
+                                        <td>Ghost of Saltmarsh</td>
+                                        <td>Lawful-Good</td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-pen text-light" title="Edit"></i>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class='btn btn-sm bg-transparent'>
+                                            <i class="fas fa-trash text-light"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+    </section>
+
+    <!--Ghost of Saltmarsh NPC-->
+    <section id="npc_table_2" class="npc_table">
+            <div class="container pb-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xs-10 col-md-10">
+                            <div class="text-light table-sm ">
+                                <h3 class="pt-3">Ghost of Saltmarsh NPC's</h3>
+                                
+                                <!-- Table with NPC information added-->
+                                <table class="table text-light">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">NPC Name</th>
+                                            <th scope="col">Race</th>
+                                            <th scope="col">Age</th>
+                                            <th scope="col">Campaign</th>
+                                            <th scope="col">Alignment</th>
+                                            <th scope="col">Edit</th>
+                                            <th scope="col">Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Janiries the Wizard</td>
+                                            <td>Half-Elf</td>
+                                            <td>75</td>
+                                            <td>Ghost of Saltmarsh</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lady Gracethana</td>
+                                            <td>Human</td>
+                                            <td>28</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Krislyassa</td>
+                                            <td>Dwarf</td>
+                                            <td>250</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Chaotic-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Theratra Stormlord</td>
+                                            <td>Elf</td>
+                                            <td>173</td>
+                                            <td>Triump</td>
+                                            <td>Lawful-Evil</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lord Quomorn</td>
+                                            <td>Orc</td>
+                                            <td>24</td>
+                                            <td>Ghost of Saltmarsh</td>
+                                            <td>Neutral-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Krislyassa</td>
+                                            <td>Dwarf</td>
+                                            <td>250</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Chaotic-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Krislyassa</td>
+                                            <td>Dwarf</td>
+                                            <td>250</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Chaotic-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+    </section>
+
+    <!--Triump NPC-->
+    <section id="npc_table_3" class="npc_table">
+            <div class="container pb-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xs-10 col-md-10">
+                            <div class="text-light table-sm ">
+                                <h3 class="pt-3">Triump NPC's</h3>
+                                
+                                <!-- Table with NPC information added-->
+                                <table class="table text-light">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">NPC Name</th>
+                                            <th scope="col">Race</th>
+                                            <th scope="col">Age</th>
+                                            <th scope="col">Campaign</th>
+                                            <th scope="col">Alignment</th>
+                                            <th scope="col">Edit</th>
+                                            <th scope="col">Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Janiries the Wizard</td>
+                                            <td>Half-Elf</td>
+                                            <td>75</td>
+                                            <td>Ghost of Saltmarsh</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lady Gracethana</td>
+                                            <td>Human</td>
+                                            <td>28</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Krislyassa</td>
+                                            <td>Dwarf</td>
+                                            <td>250</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Chaotic-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Theratra Stormlord</td>
+                                            <td>Elf</td>
+                                            <td>173</td>
+                                            <td>Triump</td>
+                                            <td>Lawful-Evil</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lord Quomorn</td>
+                                            <td>Orc</td>
+                                            <td>24</td>
+                                            <td>Ghost of Saltmarsh</td>
+                                            <td>Neutral-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lady Gracethana</td>
+                                            <td>Human</td>
+                                            <td>28</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lady Gracethana</td>
+                                            <td>Human</td>
+                                            <td>28</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lady Gracethana</td>
+                                            <td>Human</td>
+                                            <td>28</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lady Gracethana</td>
+                                            <td>Human</td>
+                                            <td>28</td>
+                                            <td>Tomb of Annihilation</td>
+                                            <td>Lawful-Good</td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-pen text-light" title="Edit"></i>
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <button class='btn btn-sm bg-transparent'>
+                                                <i class="fas fa-trash text-light"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+    </section>
+
+    
+    <!-- Fluid footer, scrools with page-->
+    <footer class="text-white">
+            <div class="container-fluid fixed-bottom bg-dark">
+                <div class="col-12">
+                    <div class="text-right">
+                        <h6>© 2018 Copyright: NPCTracker.Com</h6>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/npcview.js"></script>
+</body>
+
+</html>
