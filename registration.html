@@ -43,10 +43,7 @@
                     </a>
                     <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
-                        <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
-                        <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
-                        <a class="dropdown-item btn text-light menu mask" href="#">About</a>
-                        <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
+                        <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
                     </div>
                 </div>
             </div>
@@ -58,7 +55,7 @@
             <h1 class="mb-1 font-weight-normal font-weight-bold"><span class="labelm">NPCTracker </span>Registration</h1>
             <p class="text-right col-4 offset-md-3 labelm" id="logintxt"> Where every NPC matters!</p>
         <!--Form input fields-->
-        <form class ="form-signin col-8 offset-md-4" action="npcadd.html">
+        <form class ="form-signin col-8 offset-md-4" action="npcadd.html" method="GET"> <!--Should be POST-->
             <div class="form-group row">
                 <label for="email" class="col-2 labelm">Email</label>
                 <div>
@@ -127,6 +124,7 @@
 
             <div class="btn-group col-12 pb-5" id="btnmobile">
                 <button type="submit" class="btn btn-outline-primary text-light btn-lg mr-5 col-3" value="Go to NPCAdd">Register</button>
+                
                 <!--Break specifically for @media-->
                 <br class="mediabreak">
                 <button type="reset" class="btn btn-outline-primary text-light btn-lg col-3" value="Reset" id="resetbtn"> Reset </button>
