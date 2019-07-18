@@ -13,9 +13,14 @@
     }
 
     /*body content to be effected */
-    #bcontent {
+    .bcontent {
         display: initial;
     }  
+
+    .btnlogin {
+        display: block;
+        padding-right: 50%;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -24,15 +29,20 @@
     .mobileb {
         display: none;
     }
-   
+    
     /*main content to be effected */
     #mcontent {
         display: block;
     }
 
     /*body content to be effected */
-    #bcontent {
+    .bcontent {
         display: initial;
+    }  
+
+    .btnlogin {
+        display: block;
+        padding-right: 50%;
     }
 } 
 
@@ -43,14 +53,19 @@
         display: none;
     }
     
-    /*header content on index */
+    /*main content to be effected */
     #mcontent {
         display: block;
     }
 
-    /*body content on index page */
-    #bcontent {
+    /*body content to be effected */
+    .bcontent {
         display: initial;
+    }  
+
+    .btnlogin {
+        display: block;
+        padding-right: 50%;
     }
 } 
 
